@@ -1,26 +1,24 @@
 === UW CALS Extend RSS2 feed ===
 Contributors: uwcals
-Tags: uw, madison, wisconsin, cals, rss2, feed, thumbnails, custom fields
+Tags: uw, madison, wisconsin, cals, rss2, feed, thumbnails, custom fields, customize
 Requires at least: 2.8
 Tested up to: 3.1
 Stable tag: trunk
 
-Allows you to retrieve more post data (i.e. thumnails and custom fields) via RSS2.
-
+Enables WordPress to include thumbnail and custom-field data in its RSS2 feed
 
 == Description ==
 
-Allows you to retrieve extra post item data, so more information from a post can be available via RSS feed (i.e. specific custom fields and thumbnails). To do this, add extra parameters to your RSS feed link, as indicated below.
+Enables WordPress to include thumbnail and custom field data in its RSS2 feed.
 
-Accepted arguments:
-- All WP Feed options, as listed on http://codex.wordpress.org/WordPress_Feeds
-- post_thumbnail=1: retrieves the post's thumbnail link (if available)
-- meta_keys=meta_name1[,meta_name2,meta_nameN]: retrieves values of specifies custom fields used by the post (if available). For example, "meta_keys=post_quote,post_contributor" will retrieve the "post_quote" and "post_contributor" custom fields' value, if these fields have been added to the post.
+**How is works:**
+* *To retrieve post thumbnails:* Add "post_thumbnail=1" to your feed's link. (e.g. "http://www.mywpsite/feed/?post_thumb=1")
+* *To retrieve custom fields:* Add "meta_keys=meta_name1[,meta_name2,meta_name3,...]" to your feed's link (e.g. "http://www.mywpsite/feed/?meta_keys=post_quote,post_contributor" will retrieve the "post_quote" and "post_contributor" custom fields' value, if these fields have been added to the post.)
+* *To further customize your feed:* use any other WP Feed options, as listed on http://codex.wordpress.org/WordPress_Feeds/.
 
-Example:
+*Example:*
 The http://news.cals.wisc.edu/feed/?cat=67&post_thumb=1&meta_keys=academic_info will retrieve all posts in category 67, along with their thumbnails (if available) and the value of the 'academic_info' field (if available).
 
-The 
 == Installation ==
 
 1. Upload 'cals_rss2_feed-extend' to the '/wp-content/plugins/' directory
