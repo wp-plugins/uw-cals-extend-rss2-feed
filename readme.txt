@@ -12,9 +12,10 @@ Enables WordPress to include thumbnail and custom-field data in its RSS2 feed
 Enables WordPress to include thumbnail and custom field data in its RSS2 feed.
 
 **How is works:**
-* *To retrieve post thumbnails:* Add "post_thumbnail=1" to your feed's link. (e.g. "http://www.mywpsite/feed/?post_thumb=1")
-* *To retrieve custom fields:* Add "meta_keys=meta_name1[,meta_name2,meta_name3,...]" to your feed's link (e.g. "http://www.mywpsite/feed/?meta_keys=post_quote,post_contributor" will retrieve the "post_quote" and "post_contributor" custom fields' value, if these fields have been added to the post.)
-* *To further customize your feed:* use any other WP Feed options, as listed on http://codex.wordpress.org/WordPress_Feeds/.
+
+* To retrieve post thumbnails: Add "post_thumbnail=1" to your feed's link. (e.g. "http://www.mywpsite/feed/?post_thumb=1")
+* To retrieve custom fields: Add "meta_keys=meta_name1[,meta_name2,meta_name3,...]" to your feed's link (e.g. "http://www.mywpsite/feed/?meta_keys=post_quote,post_contributor" will retrieve the "post_quote" and "post_contributor" custom fields' value, if these fields have been added to the post.)
+* To further customize your feed: use any other WP Feed options, as listed on http://codex.wordpress.org/WordPress_Feeds/.
 
 *Example:*
 The http://news.cals.wisc.edu/feed/?cat=67&post_thumb=1&meta_keys=academic_info will retrieve all posts in category 67, along with their thumbnails (if available) and the value of the 'academic_info' field (if available).
