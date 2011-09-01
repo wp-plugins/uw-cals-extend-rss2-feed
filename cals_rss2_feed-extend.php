@@ -1,6 +1,7 @@
 <?php
 /*
 Plugin Name: UW CALS Extend RSS2 feed
+Plugin URI: http://wordpress.org/extend/plugins/uw-cals-extend-rss2-feed/
 Description: Enables WordPress to include thumbnail and custom-field data in its RSS2 feed.
 Version: 1.0
 Author: College of Agricultural and Life Sciences (CALS) at University of Wisconsin-Madison
